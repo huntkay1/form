@@ -8,43 +8,68 @@
 </head>
 <body>
     <div id="hero">
-        <div>
+        <div id="logo">
+            <img src="logo.png" class="odin-logo">
             <h1>ODIN</h1>
         </div>
         <img src="hero.jpg">
     </div>
 
     <div id="contents">
-        <p>This is not a real online service! You know you need something
+        <h2 id="header">This is not a real online service! You know you need something
             like this in your life to help you realize your deepest dreams. 
-            Sign up <em>now</em> to get started
-        </p>
-        <p>You <em>know</em> you want to.</p>
+            Sign up <em>now</em> to get started.
+        </h2>
+        <h2 id="subhead">You <em>know</em> you want to.</h2>
 
-        <form>
-            <h2>Let's do this!</h2>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name">
+        <div id="form-container">
+            <h3>Let's do this!</h2>
+            <form>
+                <div class="form-row">
+                    <div class="input-wrapper">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name">
+                    </div>
 
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name">
+                    <div class="input-wrapper">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name">
+                     </div>
+                </div>
 
-            <label for="email">Email</label>
-            <input type="email" id="email">
+                <div class="form-row">
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
 
-            <label for="phone-num">Phone Number</label>
-            <input type="tel" id="phone-num">
+                    <div class="input-wrapper">
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" id="phone-num">
+                    </div>
+                </div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password">
+                <div class="form-row">
+                    <div class="input-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                        <p class="error-message"></p>
+                    </div>
 
-            <label for="confirm-pass">Confirm Password</label>
-            <input type="password" id="confirm-pass">
+                    <div class="input-wrapper">
+                        <label for="confirm-pass">Confirm Password</label>
+                        <input type="password" id="confirm-pass">
+                        <p class="error-message"></p>
+                    </div>
+                </div>
 
-            <button type="submit">Create Account</button>
-        </form>
 
-        <p>Aready have an account? <a>Log in</a></p>
+            </form>
+        </div>
+
+        <button type="submit">Create Account</button>
+
+        <p class="log-in">Aready have an account? <a>Log in</a></p>
     </div>
 </body>
 </html>
